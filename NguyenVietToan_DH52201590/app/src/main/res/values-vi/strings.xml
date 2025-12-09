@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Quản Lý Tin Tức</string>
+    
+    <!-- Login -->
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="login_hint">Tên đăng nhập: admin, Mật khẩu: 123</string>
+    <string name="empty_fields">Vui lòng nhập tên đăng nhập và mật khẩu</string>
+    <string name="login_success">Đăng nhập thành công</string>
+    <string name="login_failed">Tên đăng nhập hoặc mật khẩu không đúng</string>
+    <string name="app_icon">Biểu tượng ứng dụng</string>
+    
+    <!-- Category -->
+    <string name="category_management">Quản Lý Danh Mục</string>
+    <string name="category_info">Quản lý tất cả danh mục tin tức</string>
+    <string name="category_name">Tên danh mục</string>
+    <string name="enter_category_name">Nhập tên danh mục</string>
+    <string name="category_list">Danh Sách Danh Mục</string>
+    <string name="empty_category_name">Vui lòng nhập tên danh mục</string>
+    <string name="select_category">Vui lòng chọn một danh mục</string>
+    <string name="cannot_delete_category">Không thể xóa danh mục đã có tin tức</string>
+    
+    <!-- News -->
+    <string name="news_management">Quản Lý Tin Tức</string>
+    <string name="news_list">Danh Sách Tin Tức</string>
+    <string name="news_title">Tiêu đề tin tức</string>
+    <string name="enter_news_title">Nhập tiêu đề tin tức</string>
+    <string name="news_image">Hình ảnh tin tức</string>
+    <string name="preview_image">Hình xem trước</string>
+    <string name="choose_image">Chọn hình ảnh</string>
+    <string name="add_news">Thêm tin tức</string>
+    <string name="edit_news">Sửa tin tức</string>
+    <string name="category">Danh mục</string>
+    <string name="author">Tác giả</string>
+    <string name="enter_author">Nhập tên tác giả</string>
+    <string name="date">Ngày đăng</string>
+    <string name="select_date">Chọn ngày</string>
+    
+    <!-- Common -->
+    <string name="add">Thêm</string>
+    <string name="update">Cập nhật</string>
+    <string name="delete">Xóa</string>
+    <string name="edit">Sửa</string>
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="confirm_delete">Xác nhận xóa</string>
+    <string name="delete_category_message">Bạn có chắc chắn muốn xóa danh mục này?</string>
+    <string name="delete_news_message">Bạn có chắc chắn muốn xóa tin tức này?</string>
+    <string name="add_success">Thêm thành công</string>
+    <string name="add_failed">Thêm thất bại</string>
+    <string name="update_success">Cập nhật thành công</string>
+    <string name="update_failed">Cập nhật thất bại</string>
+    <string name="delete_success">Xóa thành công</string>
+    <string name="delete_failed">Xóa thất bại</string>
+    
+    <!-- About -->
+    <string name="about">Giới thiệu</string>
+    <string name="about_app">Giới Thiệu Ứng Dụng</string>
+    <string name="student_name_label">Họ và tên</string>
+    <string name="student_id_label">Mã sinh viên</string>
+    <string name="class_label">Lớp</string>
+    <string name="email_label">Email</string>
+    <string name="phone_label">Số điện thoại</string>
+    <string name="call_phone">Gọi điện thoại</string>
+    <string name="university_location">Trường ĐH Công Nghệ Sài Gòn</string>
+    <string name="university_address">180 Cao Lỗ, Phường 4, Quận 8, TP.HCM</string>
+    <string name="profile_image">Ảnh đại diện</string>
+    
+    <!-- Permissions -->
+    <string name="permission_denied">Quyền bị từ chối</string>
+    <string name="camera_permission">Cần quyền truy cập camera</string>
+</resources>
