@@ -28,7 +28,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_person"
+                    android:src="@drawable/ic_logo_paw"
                     android:contentDescription="@string/profile_image"
                     android:layout_marginBottom="16dp"/>
 
@@ -38,7 +38,7 @@
                     android:text="@string/about_app"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="#1976D2"
+                    android:textColor="@color/primary"
                     android:layout_marginBottom="24dp"/>
 
                 <LinearLayout
@@ -133,7 +133,7 @@
                         android:text="nguyenvana@stu.edu.vn"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="#1976D2"
+                        android:textColor="@color/primary"
                         android:layout_marginTop="4dp"
                         android:autoLink="email"/>
                 </LinearLayout>
@@ -168,7 +168,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="@string/call_phone"
-                    android:backgroundTint="#4CAF50"
+                    android:backgroundTint="@color/button_success"
                     android:drawableStart="@android:drawable/ic_menu_call"
                     android:drawablePadding="8dp"/>
             </LinearLayout>

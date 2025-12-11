@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@style/Theme.NguyenVietToan_DH52201590">
 
         <activity
             android:name=".LoginActivity"
@@ -33,7 +33,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AizaSyDVEqT8lpq07Y18hnHzSXXhlnyfG7RG1bM" />
+            android:value="AIzaSyDCZvcdluWRIo6RuLQa9zvla4GmqJveXPw" />
     </application>
 
 </manifest>

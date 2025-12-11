@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo dấu chân chó đẹp hơn - Báo Đốm style -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Background circle - gradient effect -->
+    <path
+        android:fillColor="#FFEBEE"
+        android:pathData="M60,10 A50,50 0 1,1 60,110 A50,50 0 1,1 60,10 Z"/>
+
+    <!-- Main pad (center) - larger and rounder -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M60,66 C48,66 38,76 38,88 C38,100 48,110 60,110 C72,110 82,100 82,88 C82,76 72,66 60,66 Z"/>
+
+    <!-- Top left toe - refined shape -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M32,42 C26,42 21,47 21,53 C21,59 26,64 32,64 C38,64 43,59 43,53 C43,47 38,42 32,42 Z"/>
+
+    <!-- Top center-left toe -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M46,28 C40,28 35,33 35,39 C35,45 40,50 46,50 C52,50 57,45 57,39 C57,33 52,28 46,28 Z"/>
+
+    <!-- Top center-right toe -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M74,28 C68,28 63,33 63,39 C63,45 68,50 74,50 C80,50 85,45 85,39 C85,33 80,28 74,28 Z"/>
+
+    <!-- Top right toe -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M88,42 C82,42 77,47 77,53 C77,59 82,64 88,64 C94,64 99,59 99,53 C99,47 94,42 88,42 Z"/>
+
+    <!-- Highlight effects on main pad -->
+    <path
+        android:fillColor="#E57373"
+        android:fillAlpha="0.5"
+        android:pathData="M55,75 C50,75 46,79 46,84 C46,89 50,93 55,93 C60,93 64,89 64,84 C64,79 60,75 55,75 Z"/>
+</vector>

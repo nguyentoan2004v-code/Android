@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#FFFFFF">
+    android:background="@color/background">
 
-    <TextView
+    <!-- Header with gradient -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/category_info"
-        android:textSize="16sp"
-        android:textColor="#424242"
-        android:padding="12dp"
-        android:background="#E3F2FD"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:background="@drawable/header_gradient"
+        android:padding="20dp"
+        android:elevation="8dp">
 
-    <com.google.android.material.card.MaterialCardView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_management"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:drawableStart="@drawable/ic_category"
+            android:drawablePadding="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_info"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="4dp"
+            android:alpha="0.9"/>
+    </LinearLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:cardElevation="4dp"
-        app:cardCornerRadius="8dp"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,77 +46,129 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/category_name"
-                android:textSize="14sp"
-                android:textColor="#757575"
-                android:layout_marginBottom="8dp"/>
-
-            <EditText
-                android:id="@+id/edtCategoryName"
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_category_name"
-                android:padding="12dp"
-                android:background="@drawable/edit_text_background"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="16dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="16dp">
 
-            <LinearLayout
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_name"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:layout_marginBottom="8dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/primary"
+                        android:layout_marginBottom="16dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtCategoryName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_category_name"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnAddCategory"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            android:layout_weight="1"
+                            android:text="@string/add"
+                            android:backgroundTint="@color/button_success"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:cornerRadius="12dp"
+                            android:layout_marginEnd="6dp"
+                            android:elevation="2dp"/>
+
+                        <Button
+                            android:id="@+id/btnUpdateCategory"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            android:layout_weight="1"
+                            android:text="@string/update"
+                            android:backgroundTint="@color/button_warning"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:cornerRadius="12dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:elevation="2dp"/>
+
+                        <Button
+                            android:id="@+id/btnDeleteCategory"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            android:layout_weight="1"
+                            android:text="@string/delete"
+                            android:backgroundTint="@color/button_danger"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:cornerRadius="12dp"
+                            android:layout_marginStart="6dp"
+                            android:elevation="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="16dp">
 
-                <Button
-                    android:id="@+id/btnAddCategory"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:text="@string/add"
-                    android:backgroundTint="#4CAF50"
-                    android:textColor="#FFFFFF"
-                    android:layout_marginEnd="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btnUpdateCategory"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:text="@string/update"
-                    android:backgroundTint="#FF9800"
-                    android:textColor="#FFFFFF"
-                    android:layout_marginEnd="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_list"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
+                        android:padding="16dp"
+                        android:drawableStart="@android:drawable/ic_menu_view"
+                        android:drawablePadding="8dp"/>
 
-                <Button
-                    android:id="@+id/btnDeleteCategory"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:text="@string/delete"
-                    android:backgroundTint="#F44336"
-                    android:textColor="#FFFFFF"/>
-            </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/divider"/>
+
+                    <ListView
+                        android:id="@+id/listViewCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/divider"
+                        android:dividerHeight="1dp"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/category_list"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#212121"
-        android:layout_marginBottom="12dp"/>
-
-    <ListView
-        android:id="@+id/listViewCategory"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:divider="#E0E0E0"
-        android:dividerHeight="1dp"
-        android:background="#FAFAFA"/>
+    </ScrollView>
 
 </LinearLayout>

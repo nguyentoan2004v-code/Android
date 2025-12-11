@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors - Báo Đốm Theme -->
+    <color name="primary">#C62828</color>
+    <color name="primary_dark">#B71C1C</color>
+    <color name="primary_light">#D32F2F</color>
+    <color name="accent">#EF5350</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#C62828</color>
+    <color name="button_success">#43A047</color>
+    <color name="button_warning">#FB8C00</color>
+    <color name="button_danger">#E53935</color>
+
+    <!-- Divider & Border -->
+    <color name="divider">#E0E0E0</color>
+    <color name="border">#BDBDBD</color>
 </resources>
