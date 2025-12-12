@@ -1,6 +1,7 @@
 package vn.edu.stu.nguyenviettoan_dh52201590;
 
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -19,6 +20,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -274,6 +277,23 @@ public class NewsFormActivity extends AppCompatActivity {
             startActivity(new Intent(this, AboutActivity.class));
             return true;
         }
+        else if (id == R.id.menu_exit) {
+            showExitDialog();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
+    }
+    private void showExitDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.exit);
+        builder.setMessage(R.string.exit_message);
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        builder.setNegativeButton(R.string.no, null);
+        builder.show();
     }
 }

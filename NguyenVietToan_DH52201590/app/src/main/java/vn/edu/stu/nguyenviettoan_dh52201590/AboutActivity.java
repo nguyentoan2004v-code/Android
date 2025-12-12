@@ -1,6 +1,7 @@
 package vn.edu.stu.nguyenviettoan_dh52201590;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -10,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -24,7 +27,7 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
     private Button btnCall;
     private GoogleMap mMap;
     private static final int REQUEST_CALL_PERMISSION = 1;
-    private static final String PHONE_NUMBER = "0123456789"; // Thay bằng số điện thoại của bạn
+    private static final String PHONE_NUMBER = "0355487276";
 
 
     private static final double STU_LAT = 10.738340;
@@ -127,6 +130,23 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
         } else if (id == R.id.menu_about) {
             return true;
         }
+        else if (id == R.id.menu_exit) {
+            showExitDialog();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
+    }
+    private void showExitDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.exit);
+        builder.setMessage(R.string.exit_message);
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        builder.setNegativeButton(R.string.no, null);
+        builder.show();
     }
 }

@@ -186,6 +186,23 @@ public class CategoryActivity extends AppCompatActivity {
             startActivity(new Intent(this, AboutActivity.class));
             return true;
         }
+        else if (id == R.id.menu_exit) {
+            showExitDialog();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
+    }
+    private void showExitDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.exit);
+        builder.setMessage(R.string.exit_message);
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        builder.setNegativeButton(R.string.no, null);
+        builder.show();
     }
 }

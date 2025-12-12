@@ -56,6 +56,8 @@
     <string name="update_failed">Update failed</string>
     <string name="delete_success">Deleted successfully</string>
     <string name="delete_failed">Delete failed</string>
+    <string name="exit">Exit</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
 
     <!-- About -->
     <string name="about">About</string>
